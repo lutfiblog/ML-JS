@@ -21,7 +21,10 @@ function gotResults(error, results) {
 
 
 function setup() {
-  createCanvas(640, 550);
+  var myCanvas = createCanvas(640, 550);
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  myCanvas.position(x, y);
   video = createCapture(VIDEO);
   video.hide();
   background(0);
